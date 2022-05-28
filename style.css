@@ -98,3 +98,11 @@ header .right a.active span {
         top: 7.71vw;
     }
 }
+
+
+a.book-item {
+    transition: .3s;
+}
+a.book-item:hover {
+    transform: scale(.8) rotate(-5deg);
+}
