@@ -159,5 +159,6 @@ a.book-item:hover {
 @media (max-width: 1100px) {
     .greg-bgr {
         display: none;
+        
     }
 }
