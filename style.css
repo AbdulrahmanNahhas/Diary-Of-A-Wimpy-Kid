@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+/* Main rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+a {
+    /* color: #000 !important; */
+    text-decoration: none !important;
+}
+
+*.arabic {
+    font-family: 'El Messiri', sans-serif;
+}
+
+
+/* Header */
+header {
+    padding-inline: 100px;
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+}
+
+header img {
+    margin-block: 15px;
+    height: 40px;
+    line-height: 70px;
+}
+
+header .right {
+    position: relative;
+    float: right;
+}
+
+header .right a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-inline: 5px;
+    margin-right: 15px;
+    z-index: 99;
+    position: relative;
+    padding-block: 10px;
+}
+
+header .right a.active span {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    height: 120%;
+    width: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://wimpykid.com/wp-content/themes/wimpykid/webroot/img/bgr-paint-splash/books/col-3-color-2.svg");
+}
+
+header .right a.arabic-active {
+    color: #fff !important;
+}
+header .right a.arabic-active span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    height: 125%;
+    width: 125%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://wimpykid.com/wp-content/themes/wimpykid/webroot/img/bgr-paint-splash/books/col-1-color-5.svg");
+}
+header .right a.video-active {
+    color: #fff !important;
+}
+header .right a.video-active span {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    height: 125%;
+    width: 125%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://wimpykid.com/wp-content/themes/wimpykid/webroot/img/bgr-paint-splash/books/col-3-color-6.svg");
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 120px;
+        line-height: 70px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    header .right {
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* Books */
+
+/* notebook background */
+.notebook-bgr {
+    background-image: linear-gradient(#e5e5e5 1px, transparent 0);
+    background-size: 100% 39px;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 148px;
+    width: 100%;
+    z-index: -2;
+}
+
+@media (min-width: 1025px) {
+    .notebook-bgr {
+        background-size: 100% 1.979vw;
+        top: 7.71vw;
+    }
+}
+
+a.book-item img {
+    transition: .3s;
+}
+a.book-item:nth-child(odd) img:hover {
+    transform: scale(.9) rotate(-5deg);
+}
+a.book-item:nth-child(even) img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+/* greg */
+.greg-bgr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.greg-thinking {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    width: 65px;
+    height: 65px;
+}
+
+.greg-and-rowel {
+    position: absolute;
+    top: 57%;
+    left: 28%;
+    width: 150px;
+    height: 150px;
+}
+
+.plane {
+    top: 95%;
+    right: 25%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 1100px) {
+    .greg-bgr {
+        display: none;
+    }
+}
